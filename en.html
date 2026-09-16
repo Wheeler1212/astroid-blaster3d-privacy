@@ -1,0 +1,260 @@
+<title>Astroid Blaster3D Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --text: #1b2333;
+    --text-muted: #5c6478;
+    --accent: #3752e0;
+    --accent-soft: #eef0fd;
+    --border: #e3e6ee;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1320;
+      --surface: #161b2c;
+      --text: #e9ebf4;
+      --text-muted: #9aa2b8;
+      --accent: #8393ff;
+      --accent-soft: #1d2440;
+      --border: #262d44;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f1320;
+    --surface: #161b2c;
+    --text: #e9ebf4;
+    --text-muted: #9aa2b8;
+    --accent: #8393ff;
+    --accent-soft: #1d2440;
+    --border: #262d44;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    text-wrap: balance;
+    color: var(--text);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge svg { width: 30px; height: 30px; }
+
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 2px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 20px 0 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary {
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+
+  .summary p { margin: 0; }
+  .summary strong { color: var(--accent); }
+
+  section {
+    margin-bottom: 34px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+  }
+
+  h2 .num {
+    font-family: "Public Sans", sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 15px;
+  }
+
+  p { margin: 0 0 12px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 12px;
+    padding-left: 22px;
+    max-width: 62ch;
+  }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 12px;
+  }
+
+  .card dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .card dt { color: var(--text-muted); }
+  .card dd { margin: 0; }
+  .card a { color: var(--accent); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    .badge { width: 44px; height: 44px; }
+  }
+</style>
+
+<main>
+  <header>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C12 2 17 5 17 11C17 14.5 15.5 17 12 21C8.5 17 7 14.5 7 11C7 5 12 2 12 2Z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/>
+        <circle cx="12" cy="10" r="2.1" stroke="var(--accent)" stroke-width="1.6"/>
+        <path d="M8.5 18.5L6 21M15.5 18.5L18 21" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow">Astroid Blaster3D</p>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <p class="meta">Last updated: September 16, 2026 · applies to the iOS app &#8220;Astroid Blaster3D&#8221;</p>
+
+  <div class="summary">
+    <p><strong>Short version:</strong> Astroid Blaster3D does not collect, store, or transmit any personal data. There is no user account, no tracking, no advertising, and no analytics. Anything the app remembers as a setting stays on your device only.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> Data Controller</h2>
+    <p>The party responsible for this app under the General Data Protection Regulation (GDPR) is:</p>
+    <div class="card">
+      <dl>
+        <dt>Name</dt><dd>Günter Voit</dd>
+        <dt>App</dt><dd>Astroid Blaster3D</dd>
+        <dt>Email</dt><dd><a href="mailto:guenter.voit@gmail.com">guenter.voit@gmail.com</a></dd>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> What data is processed?</h2>
+    <p>None. Astroid Blaster3D is a fully offline game and works without an internet connection. It does not collect, store, or transmit your name, email address, location, contacts, photos, or any other kind of personal data — to me or to anyone else.</p>
+    <p>The app only remembers a handful of technical gameplay settings (for example, whether a debug overlay is switched on) using Apple's local storage mechanism, <code>UserDefaults</code>. This data:</p>
+    <ul>
+      <li>never leaves your device,</li>
+      <li>is never shared with me, with Apple, or with any third party,</li>
+      <li>is deleted when you uninstall the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> No Third-Party Services</h2>
+    <p>The app does not include any third-party software for data collection. Specifically, it does not use:</p>
+    <ul>
+      <li>Analytics or tracking services (e.g. Firebase Analytics)</li>
+      <li>Advertising networks</li>
+      <li>Game Center, cloud saves, or online leaderboards</li>
+      <li>Social media integrations or sign-in providers</li>
+      <li>In-app purchases or payment services</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> No User Account</h2>
+    <p>Astroid Blaster3D requires no registration, no account, and no sign-in. You can start playing immediately after installing it, without providing any information.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Children's Privacy</h2>
+    <p>Because the app does not collect any data at all, this applies regardless of the player's age — no personal data is processed for children either.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Your Rights</h2>
+    <p>Since no personal data is processed, requests for access, correction, or deletion under Art. 15–17 GDPR have nothing to act on — there simply isn't anything stored. If you have any questions about privacy in this app regardless, you're welcome to reach me at the email address above at any time.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> Changes to this Policy</h2>
+    <p>Should the app's data handling ever change (for example, through a future update adding online leaderboards), this page will be updated accordingly and the date above revised.</p>
+  </section>
+
+  <footer>
+    This privacy policy was created for the app &#8220;Astroid Blaster3D&#8221; and is intended solely for its review on the App Store and for use by the app's players.
+  </footer>
+</main>
