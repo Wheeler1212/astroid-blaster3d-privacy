@@ -1,0 +1,214 @@
+  /* Schriften liegen lokal im Repo (fonts/) statt bei Google Fonts - sonst geht die
+     IP-Adresse jedes Besuchers an Google (DSGVO). Beide unter SIL Open Font License,
+     siehe fonts/OFL-*.txt. Variable Fonts: eine Datei deckt alle Stärken ab. */
+  @font-face {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/PublicSans-Variable-latin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Source Serif 4";
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url("fonts/SourceSerif4-Variable-latin.woff2") format("woff2");
+  }
+
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --text: #1b2333;
+    --text-muted: #5c6478;
+    --accent: #3752e0;
+    --accent-soft: #eef0fd;
+    --border: #e3e6ee;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1320;
+      --surface: #161b2c;
+      --text: #e9ebf4;
+      --text-muted: #9aa2b8;
+      --accent: #8393ff;
+      --accent-soft: #1d2440;
+      --border: #262d44;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0f1320;
+    --surface: #161b2c;
+    --text: #e9ebf4;
+    --text-muted: #9aa2b8;
+    --accent: #8393ff;
+    --accent-soft: #1d2440;
+    --border: #262d44;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    text-wrap: balance;
+    color: var(--text);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge svg { width: 30px; height: 30px; }
+
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 2px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 20px 0 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary {
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+
+  .summary p { margin: 0; }
+  .summary strong { color: var(--accent); }
+
+  section {
+    margin-bottom: 34px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+  }
+
+  h2 .num {
+    font-family: "Public Sans", sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 15px;
+  }
+
+  p { margin: 0 0 12px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 12px;
+    padding-left: 22px;
+    max-width: 62ch;
+  }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 12px;
+  }
+
+  .card dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .card dt { color: var(--text-muted); }
+  .card dd { margin: 0; }
+  .card a { color: var(--accent); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    .badge { width: 44px; height: 44px; }
+  }
+
+  /* Navigation zwischen Support / Datenschutz / Impressum / Sprache */
+  nav.top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+  nav.top a { color: var(--text-muted); text-decoration: none; }
+  nav.top a:hover { color: var(--accent); }
+  nav.top a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+  nav.top .lang { margin-left: auto; }
+
+  a { color: var(--accent); }
+  .faq h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 0 4px;
+  }
+  .faq h3:first-child { margin-top: 0; }

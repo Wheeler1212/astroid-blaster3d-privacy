@@ -1,187 +1,23 @@
-<title>Astroid Blaster3D Datenschutz</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap">
-<style>
-  :root {
-    --bg: #f6f7fb;
-    --surface: #ffffff;
-    --text: #1b2333;
-    --text-muted: #5c6478;
-    --accent: #3752e0;
-    --accent-soft: #eef0fd;
-    --border: #e3e6ee;
-    color-scheme: light dark;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0f1320;
-      --surface: #161b2c;
-      --text: #e9ebf4;
-      --text-muted: #9aa2b8;
-      --accent: #8393ff;
-      --accent-soft: #1d2440;
-      --border: #262d44;
-    }
-  }
-
-  :root[data-theme="dark"] {
-    --bg: #0f1320;
-    --surface: #161b2c;
-    --text: #e9ebf4;
-    --text-muted: #9aa2b8;
-    --accent: #8393ff;
-    --accent-soft: #1d2440;
-    --border: #262d44;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-    padding-inline: 20px;
-    padding-block: 48px;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  main {
-    max-width: 680px;
-    margin: 0 auto;
-  }
-
-  h1, h2 {
-    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-    text-wrap: balance;
-    color: var(--text);
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 8px;
-  }
-
-  .badge {
-    flex: none;
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: var(--accent-soft);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .badge svg { width: 30px; height: 30px; }
-
-  .eyebrow {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 2px;
-  }
-
-  h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.2;
-  }
-
-  .meta {
-    color: var(--text-muted);
-    font-size: 14px;
-    margin: 20px 0 40px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .summary {
-    background: var(--accent-soft);
-    border-radius: 14px;
-    padding: 20px 22px;
-    margin-bottom: 40px;
-    font-size: 15px;
-  }
-
-  .summary p { margin: 0; }
-  .summary strong { color: var(--accent); }
-
-  section {
-    margin-bottom: 34px;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    margin: 0 0 12px;
-  }
-
-  h2 .num {
-    font-family: "Public Sans", sans-serif;
-    font-variant-numeric: tabular-nums;
-    font-weight: 700;
-    color: var(--accent);
-    font-size: 15px;
-  }
-
-  p { margin: 0 0 12px; max-width: 62ch; }
-  p:last-child { margin-bottom: 0; }
-
-  ul {
-    margin: 0 0 12px;
-    padding-left: 22px;
-    max-width: 62ch;
-  }
-  li { margin-bottom: 6px; }
-
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 20px;
-    margin-top: 12px;
-  }
-
-  .card dl {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 6px 16px;
-    margin: 0;
-    font-size: 15px;
-  }
-  .card dt { color: var(--text-muted); }
-  .card dd { margin: 0; }
-  .card a { color: var(--accent); text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-
-  footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 13px;
-  }
-
-  @media (max-width: 480px) {
-    h1 { font-size: 24px; }
-    .badge { width: 44px; height: 44px; }
-  }
-</style>
-
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astroid Blaster3D – Datenschutz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <main>
+  <nav class="top">
+    <a href="support.html">Support</a>
+    <a href="index.html" aria-current="page">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+    <a class="lang" href="en.html" hreflang="en">English</a>
+  </nav>
+
   <header>
     <div class="badge">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M12 2C12 2 17 5 17 11C17 14.5 15.5 17 12 21C8.5 17 7 14.5 7 11C7 5 12 2 12 2Z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/>
         <circle cx="12" cy="10" r="2.1" stroke="var(--accent)" stroke-width="1.6"/>
         <path d="M8.5 18.5L6 21M15.5 18.5L18 21" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/>
@@ -193,10 +29,10 @@
     </div>
   </header>
 
-  <p class="meta">Stand: 16. September 2026 · gilt für die iOS-App „Astroid Blaster3D&#8220;</p>
+  <p class="meta">Stand: 8. Oktober 2026 · gilt für die iOS-App „Astroid Blaster3D“</p>
 
   <div class="summary">
-    <p><strong>Kurz gesagt:</strong> Astroid Blaster3D erhebt, speichert und übermittelt keine personenbezogenen Daten. Es gibt kein Nutzerkonto, kein Tracking, keine Werbung und keine Analyse-Dienste. Alles, was die App an Einstellungen merkt, bleibt ausschließlich auf deinem Gerät.</p>
+    <p><strong>Kurz gesagt:</strong> Astroid Blaster3D erhebt keine personenbezogenen Daten und überträgt nichts – weder an mich noch an Dritte. Es gibt kein Nutzerkonto, kein Tracking, keine Werbung und keine Analyse-Dienste. Einstellungen, einen selbst gewählten Spielernamen und die Highscores speichert die App ausschließlich auf deinem Gerät.</p>
   </div>
 
   <section>
@@ -206,18 +42,25 @@
       <dl>
         <dt>Name</dt><dd>Günter Voit</dd>
         <dt>App</dt><dd>Astroid Blaster3D</dd>
-        <dt>E-Mail</dt><dd><a href="mailto:guenter.voit@gmail.com">guenter.voit@gmail.com</a></dd>
+        <dt>E-Mail</dt><dd><a href="mailto:guenter.voit@gmx.net">guenter.voit@gmx.net</a></dd>
       </dl>
     </div>
+    <p style="margin-top:12px">Die vollständige Anschrift findest du im <a href="impressum.html">Impressum</a>.</p>
   </section>
 
   <section>
     <h2><span class="num">02</span> Welche Daten werden verarbeitet?</h2>
-    <p>Keine. Astroid Blaster3D ist ein reines Offline-Spiel und funktioniert vollständig ohne Internetverbindung. Es werden weder Name, E-Mail-Adresse, Standort, Kontakte, Fotos noch irgendeine andere Art personenbezogener Daten erfasst, gespeichert oder an mich oder Dritte übertragen.</p>
-    <p>Die App merkt sich lediglich ein paar technische Spieleinstellungen (z. B. ob eine Debug-Anzeige eingeschaltet ist) über die von Apple bereitgestellte lokale Speicherfunktion <code>UserDefaults</code>. Diese Daten:</p>
+    <p>Astroid Blaster3D ist ein reines Offline-Spiel und funktioniert vollständig ohne Internetverbindung. Die App greift nicht auf Standort, Kontakte, Fotos, Mikrofon oder Kamera zu und überträgt keinerlei Daten über das Internet.</p>
+    <p>Lokal auf deinem Gerät speichert die App über die von Apple bereitgestellte Speicherfunktion <code>UserDefaults</code>:</p>
     <ul>
-      <li>verlassen zu keinem Zeitpunkt dein Gerät,</li>
-      <li>werden nicht mit mir, mit Apple oder mit sonst jemandem geteilt,</li>
+      <li><strong>Spieleinstellungen</strong> – z. B. Sound, Musik, Schwierigkeitsgrad, Spielhinweise,</li>
+      <li><strong>einen Spielernamen</strong>, falls du freiwillig einen eingibst (ein Spitzname genügt),</li>
+      <li><strong>deine Highscores</strong> – Punkte zusammen mit dem jeweiligen Spielernamen.</li>
+    </ul>
+    <p>Diese Daten:</p>
+    <ul>
+      <li>verlassen dein Gerät nicht und werden nicht mit mir oder Dritten geteilt,</li>
+      <li>können Teil deiner eigenen Geräte-Sicherung sein (iCloud-Backup oder Backup über den Mac/PC) – das verwaltest du selbst in den Einstellungen deines Geräts,</li>
       <li>werden gelöscht, wenn du die App deinstallierst.</li>
     </ul>
   </section>
@@ -236,17 +79,17 @@
 
   <section>
     <h2><span class="num">04</span> Kein Nutzerkonto</h2>
-    <p>Astroid Blaster3D benötigt keine Registrierung, keinen Account und keine Anmeldung. Du kannst das Spiel direkt nach der Installation nutzen, ohne irgendwelche Angaben zu machen.</p>
+    <p>Astroid Blaster3D benötigt keine Registrierung, keinen Account und keine Anmeldung. Du kannst das Spiel direkt nach der Installation nutzen. Einen Spielernamen für die Highscore-Liste kannst du freiwillig eingeben – Pflicht ist das nicht.</p>
   </section>
 
   <section>
     <h2><span class="num">05</span> Kinder &amp; Jugendschutz</h2>
-    <p>Da die App grundsätzlich keine Daten erhebt, gilt das unabhängig vom Alter der spielenden Person – auch von Kindern werden keine personenbezogenen Daten verarbeitet.</p>
+    <p>Da die App keine Daten erhebt oder überträgt, gilt das unabhängig vom Alter der spielenden Person – auch von Kindern werden keine personenbezogenen Daten an mich oder Dritte übermittelt.</p>
   </section>
 
   <section>
     <h2><span class="num">06</span> Deine Rechte</h2>
-    <p>Da keine personenbezogenen Daten verarbeitet werden, laufen Auskunfts-, Berichtigungs- oder Löschungsansprüche nach Art. 15–17 DSGVO praktisch leer – es gibt schlicht nichts, was gespeichert wäre. Solltest du trotzdem Fragen zum Datenschutz in dieser App haben, kannst du mich jederzeit unter der oben genannten E-Mail-Adresse erreichen.</p>
+    <p>Bei mir sind keine Daten über dich gespeichert – Auskunfts-, Berichtigungs- oder Löschungsansprüche nach Art. 15–17 DSGVO laufen deshalb praktisch leer. Die lokal gespeicherten Daten (Spielername, Highscores, Einstellungen) hast du selbst in der Hand: Du kannst den Namen in der App jederzeit ändern und alles durch Löschen der App entfernen. Bei Fragen zum Datenschutz erreichst du mich jederzeit unter der oben genannten E-Mail-Adresse.</p>
   </section>
 
   <section>
@@ -255,6 +98,8 @@
   </section>
 
   <footer>
-    Diese Datenschutzerklärung wurde für die App „Astroid Blaster3D&#8220; erstellt und ist ausschließlich für deren Bewertung im App Store bzw. durch Nutzer der App bestimmt.
+    Diese Datenschutzerklärung gilt für die iOS-App „Astroid Blaster3D“.
   </footer>
 </main>
+</body>
+</html>
