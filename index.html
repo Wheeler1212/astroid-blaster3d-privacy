@@ -13,7 +13,7 @@
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="alternate" hreflang="en" href="https://astroid-blaster.de/index-en.html">
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="home.css?v=3">
 </head>
 <body>
 
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="device">
-        <img src="img/shot-action.jpg" width="1600" height="1200" alt="Spielszene: Das TwinShip feuert eine Doppel-Salve, ein Asteroid explodiert, oben grinst der Würfel-Smiley des Invaders">
+        <img src="img/shot-action.jpg" width="1600" height="1200" alt="Spielszene: Das TwinShip feuert eine Doppel-Salve, ein Asteroid explodiert, oben grinst der Würfel-Smiley">
       </div>
     </div>
   </section>
@@ -99,10 +99,17 @@
       </div>
       <div class="enemies">
         <article class="enemy">
-          <img src="img/enemy-invader.jpg" width="480" height="480" loading="lazy" alt="Der Invader: ein gelber Smiley aus Würfeln">
+          <img src="img/enemy-smiley.jpg" width="480" height="480" loading="lazy" alt="Der Smiley: ein gelbes Gesicht aus Würfeln">
+          <div>
+            <h3 class="pixel">SMILEY</h3>
+            <p>Bring ihn ins Trudeln und schieß seinen Würfelkreis ab – dann schenkt er dir sein Schild.</p>
+          </div>
+        </article>
+        <article class="enemy">
+          <img src="img/enemy-invader-red.jpg" width="480" height="480" loading="lazy" alt="Der Invader: eine rote Figur aus Würfeln">
           <div>
             <h3 class="pixel">INVADER</h3>
-            <p>Bring ihn ins Trudeln und schieß seinen Würfelkreis ab – dann schenkt er dir sein Schild. Kommt er zu zweit, zündet der zweite eine Schockwelle.</p>
+            <p>Kommt ab Level 5 dazu. Zerleg auch seinen Würfelkreis – dann zündet er eine Schockwelle: Asteroiden zerplatzen, und du bekommst 10 Sekunden extra.</p>
           </div>
         </article>
         <article class="enemy">
@@ -137,19 +144,88 @@
     </div>
   </section>
 
-  <section id="bilder">
+  <section id="getuemmel">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="pixel">Mitten im Getümmel</h2>
+        <p>Ab Level 10 wird es voll: Smiley und Invader, TechnoSphere, BigFlash und Sterne – alles gleichzeitig. Zum Vergrößern antippen.</p>
+      </div>
+      <div class="gallery">
+        <figure><a href="img/action-duel.jpg" data-caption="Smiley und Invader gleichzeitig – der Smiley zerfällt, der Invader greift an"><img src="img/action-duel-sm.jpg" width="640" height="468" loading="lazy" alt="Smiley und Invader gleichzeitig – der Smiley zerfällt, der Invader greift an"></a><figcaption>Smiley und Invader im Kampf</figcaption></figure>
+        <figure><a href="img/action-rings.jpg" data-caption="Smiley und Invader bilden ihren Würfelkreis"><img src="img/action-rings-sm.jpg" width="640" height="468" loading="lazy" alt="Smiley und Invader bilden ihren Würfelkreis"></a><figcaption>Doppelte Würfelkreise</figcaption></figure>
+        <figure><a href="img/action-sphere-flash.jpg" data-caption="TechnoSphere, BigFlash und der Kreis des Invaders auf einmal"><img src="img/action-sphere-flash-sm.jpg" width="640" height="468" loading="lazy" alt="TechnoSphere, BigFlash und der Kreis des Invaders auf einmal"></a><figcaption>Alles auf einmal</figcaption></figure>
+        <figure><a href="img/action-shield.jpg" data-caption="Mit Schild durchs Feuer – eine Sekunde vor Levelende"><img src="img/action-shield-sm.jpg" width="640" height="468" loading="lazy" alt="Mit Schild durchs Feuer – eine Sekunde vor Levelende"></a><figcaption>Mit Schild durchs Feuer</figcaption></figure>
+        <figure><a href="img/action-ripple.jpg" data-caption="Treffer! Der Raum gerät ins Beben"><img src="img/action-ripple-sm.jpg" width="640" height="468" loading="lazy" alt="Treffer! Der Raum gerät ins Beben"></a><figcaption>Treffer – der Raum bebt</figcaption></figure>
+        <figure><a href="img/action-probe-star.jpg" data-caption="Die Probe lässt ihren Stern frei"><img src="img/action-probe-star-sm.jpg" width="640" height="468" loading="lazy" alt="Die Probe lässt ihren Stern frei"></a><figcaption>Fang den Stern!</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="bilder" class="section-alt">
     <div class="wrap">
       <div class="section-head">
         <h2 class="pixel">Bilder aus dem Spiel</h2>
         <p>Echte Szenen aus Astroid Blaster3D auf dem iPad. Zum Vergrößern antippen.</p>
       </div>
       <div class="gallery">
-        <figure><a href="img/shot-action.jpg" data-caption="Doppel-Salve, Explosion und der grinsende Invader"><img src="img/shot-action-sm.jpg" width="640" height="480" loading="lazy" alt="Doppel-Salve trifft einen Asteroiden"></a><figcaption>Doppel-Salve gegen Asteroid und Invader</figcaption></figure>
-        <figure><a href="img/shot-shockwave.jpg" data-caption="Die Schockwelle des zweiten Invaders – plus 10 Sekunden Levelzeit"><img src="img/shot-shockwave-sm.jpg" width="640" height="480" loading="lazy" alt="Orange leuchtende Schockwelle sprengt Asteroiden"></a><figcaption>Schockwelle: +10 Sekunden</figcaption></figure>
+        <figure><a href="img/shot-action.jpg" data-caption="Doppel-Salve, Explosion und der grinsende Smiley"><img src="img/shot-action-sm.jpg" width="640" height="480" loading="lazy" alt="Doppel-Salve trifft einen Asteroiden"></a><figcaption>Doppel-Salve gegen Asteroid und Smiley</figcaption></figure>
+        <figure><a href="img/shot-shockwave.jpg" data-caption="Die Schockwelle des roten Invaders – plus 10 Sekunden Levelzeit"><img src="img/shot-shockwave-sm.jpg" width="640" height="480" loading="lazy" alt="Orange leuchtende Schockwelle sprengt Asteroiden"></a><figcaption>Schockwelle: +10 Sekunden</figcaption></figure>
         <figure><a href="img/shot-tunnel.jpg" data-caption="Die Bonusrunde: frei fliegen im 3D-Tunnel"><img src="img/shot-tunnel-sm.jpg" width="640" height="480" loading="lazy" alt="Das Bonus-Schiff fliegt durch einen roten Tunnel"></a><figcaption>Bonusrunde im 3D-Tunnel</figcaption></figure>
         <figure><a href="img/shot-sphere.jpg" data-caption="Die TechnoSphere hinter ihrem Schildring"><img src="img/shot-sphere-sm.jpg" width="640" height="480" loading="lazy" alt="TechnoSphere mit Ring aus Schildkugeln"></a><figcaption>Die TechnoSphere</figcaption></figure>
-        <figure><a href="img/shot-invader.jpg" data-caption="Der Invader baut sich auf – besiege ihn für ein Schild"><img src="img/shot-invader-sm.jpg" width="640" height="480" loading="lazy" alt="Der Invader erscheint"></a><figcaption>Der Invader erscheint</figcaption></figure>
+        <figure><a href="img/shot-invader.jpg" data-caption="Der Smiley baut sich auf – besiege ihn für ein Schild"><img src="img/shot-invader-sm.jpg" width="640" height="480" loading="lazy" alt="Der Smiley erscheint"></a><figcaption>Der Smiley erscheint</figcaption></figure>
         <figure><a href="img/shot-timesup.jpg" data-caption="Time's up! Abrechnung am Levelende"><img src="img/shot-timesup-sm.jpg" width="640" height="480" loading="lazy" alt="Levelende mit Bonuspunkten"></a><figcaption>Time's up – die Abrechnung</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="einstellungen">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="pixel">Mach es zu deinem Spiel</h2>
+        <p>In den Einstellungen passt du Steuerung, Ton und Anzeige an – und wählst deinen Lieblings-Himmel.</p>
+      </div>
+      <div class="settings-row">
+        <div class="features">
+          <article class="feature">
+            <div class="ico" style="background:rgba(95,227,255,.14);color:var(--cyan)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4M6 10v4M15 11h.01M18 13h.01"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+            </div>
+            <h3>Steuerung</h3>
+            <p><strong>Ship Tilt</strong>: Das Schiff neigt sich in die Kurve. <strong>Acceleration</strong>: Schnelle Wischbewegungen tragen das Schiff weiter.</p>
+          </article>
+          <article class="feature">
+            <div class="ico" style="background:rgba(255,216,74,.14);color:var(--yellow)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+            </div>
+            <h3>Ton</h3>
+            <p><strong>Music</strong>, <strong>Sound</strong> und <strong>Voice Message</strong> (Sprachansagen) einzeln ein- und ausschalten.</p>
+          </article>
+          <article class="feature">
+            <div class="ico" style="background:rgba(255,75,85,.14);color:var(--red)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Anzeige</h3>
+            <p><strong>Show Controls</strong>, <strong>Start Animation</strong>, das <strong>Kollisions-Radar</strong> oben rechts und die <strong>Game Hints</strong> – alles nach Geschmack.</p>
+          </article>
+          <article class="feature">
+            <div class="ico" style="background:rgba(255,154,60,.14);color:var(--orange)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V14M10 20V10M16 20V6M22 20V3"/></svg>
+            </div>
+            <h3>Schwierigkeit &amp; Highscores</h3>
+            <p><strong>Easy</strong> bis <strong>Extreme</strong>: kleinere, schnellere Asteroiden und mehr Betrieb. Jede Stufe hat ihre eigene Highscore-Liste mit deinem Spielernamen.</p>
+          </article>
+        </div>
+        <div class="settings-col">
+          <div class="settings-shot"><img src="img/settings-panel.jpg" width="442" height="900" loading="lazy" alt="Einstellungen im Spiel: Control, Audio, Canvas und die Schalter Show Controls, Start Animation, Collisions und Game Hints"></div>
+          <p>So sieht es im Spiel aus</p>
+        </div>
+      </div>
+      <h3 class="pixel sub-head">Vier Hintergründe zur Wahl</h3>
+      <div class="gallery four">
+        <figure><a href="img/canvas-shadowaurora-lg.jpg" data-caption="ShadowAurora – Orionnebel mit Sternenfeld"><img src="img/canvas-shadowaurora.jpg" width="640" height="480" loading="lazy" alt="Orionnebel mit Sternenfeld"></a><figcaption><strong>ShadowAurora</strong> · Orionnebel mit Sternenfeld</figcaption></figure>
+        <figure><a href="img/canvas-nebuladreams-lg.jpg" data-caption="NebulaDreams – Leuchtender Nebel in Magenta"><img src="img/canvas-nebuladreams.jpg" width="640" height="480" loading="lazy" alt="Leuchtender Nebel in Magenta"></a><figcaption><strong>NebulaDreams</strong> · Leuchtender Nebel in Magenta</figcaption></figure>
+        <figure><a href="img/canvas-voidserenity-lg.jpg" data-caption="VoidSerenity – Die Milchstraße"><img src="img/canvas-voidserenity.jpg" width="640" height="480" loading="lazy" alt="Die Milchstraße"></a><figcaption><strong>VoidSerenity</strong> · Die Milchstraße</figcaption></figure>
+        <figure><a href="img/canvas-oblivionsky-lg.jpg" data-caption="OblivionSky – Orionnebel in Nahaufnahme"><img src="img/canvas-oblivionsky.jpg" width="640" height="480" loading="lazy" alt="Orionnebel in Nahaufnahme"></a><figcaption><strong>OblivionSky</strong> · Orionnebel in Nahaufnahme</figcaption></figure>
       </div>
     </div>
   </section>
