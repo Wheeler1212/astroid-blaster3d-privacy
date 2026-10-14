@@ -270,6 +270,11 @@ section { padding: 88px 0; }
 
 /* Galerie mit vier Spalten (Hintergründe) + Einstellungen */
 .gallery.four { grid-template-columns: repeat(4, 1fr); }
+/* iPhone-Bilder im Breitformat (2868 x 1287) */
+.gallery.wide { grid-template-columns: repeat(2, 1fr); }
+.gallery.wide img { aspect-ratio: 2868 / 1287; }
+.section-head.sub { margin: 64px 0 32px; }
+.section-head h3 { font-size: clamp(14px, 1.8vw, 18px); line-height: 1.5; margin: 0 0 12px; color: var(--yellow); }
 .settings-row {
   display: grid;
   grid-template-columns: 1fr 260px;
