@@ -65,7 +65,7 @@
           <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg></span>
         </a>
       </div>
-      <p class="video-note">Das Video wird erst nach dem Klick von YouTube geladen. Dabei werden Daten an YouTube (Google) übertragen – mehr dazu in der <a href="datenschutz.html#youtube">Datenschutzerklärung</a>.</p>
+      <p class="video-note">Das Video wird erst nach dem Klick von YouTube geladen und startet ohne Ton. Dabei werden Daten an YouTube (Google) übertragen – mehr dazu in der <a href="datenschutz.html#youtube">Datenschutzerklärung</a>.</p>
       <p class="video-channel">Mehr auf YouTube: <a href="https://www.youtube.com/@AstroidBlaster3D">@AstroidBlaster3D</a></p>
     </div>
   </section>
@@ -288,14 +288,16 @@
 
 <script>
   // Video erst nach dem Klick laden (2-Klick-Lösung) - vorher keine Verbindung zu
-  // YouTube. Ohne JavaScript öffnet der Link das Video direkt auf YouTube.
+  // YouTube. Stumm (mute=1): Safari blockiert den Autostart mit Ton aus fremden
+  // Fenstern, sonst brauchte es einen zweiten Klick. Ohne JavaScript öffnet der
+  // Link das Video direkt auf YouTube.
   (function () {
     document.querySelectorAll(".video-frame").forEach(function (frame) {
       var link = frame.querySelector(".video-poster");
       link.addEventListener("click", function (e) {
         e.preventDefault();
         var iframe = document.createElement("iframe");
-        iframe.src = "https://www.youtube-nocookie.com/embed/" + frame.dataset.video + "?autoplay=1&rel=0";
+        iframe.src = "https://www.youtube-nocookie.com/embed/" + frame.dataset.video + "?autoplay=1&mute=1&rel=0";
         iframe.title = frame.dataset.title || "YouTube";
         iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
         iframe.allowFullscreen = true;
