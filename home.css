@@ -335,6 +335,34 @@ footer.site nav { display: flex; gap: 22px; margin-left: auto; }
 footer.site a { color: var(--muted); text-decoration: none; }
 footer.site a:hover { color: var(--text); }
 
+/* ---------- Video (2-Klick: YouTube lädt erst nach dem Klick) ---------- */
+.video-frame {
+  position: relative;
+  max-width: 920px;
+  aspect-ratio: 2388 / 1668;   /* iPad-Aufnahme im Querformat */
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-poster { position: absolute; inset: 0; display: block; color: #fff; }
+.video-poster img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); transition: filter 0.2s ease; }
+.video-poster:hover img, .video-poster:focus-visible img { filter: brightness(0.85); }
+.video-poster .play {
+  position: absolute; left: 50%; top: 50%;
+  width: 84px; height: 84px; margin: -42px 0 0 -42px;
+  border-radius: 50%;
+  background: var(--red);
+  display: grid; place-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+.video-poster:hover .play { transform: scale(1.08); }
+.video-poster .play svg { width: 34px; height: 34px; margin-left: 5px; }
+.video-note { color: var(--muted); font-size: 14px; margin: 14px 0 0; max-width: 920px; }
+.video-channel { margin: 10px 0 0; font-size: 15px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
   .features { grid-template-columns: repeat(2, 1fr); }
@@ -363,4 +391,5 @@ footer.site a:hover { color: var(--text); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .gallery a { transition: none; }
+  .video-poster img, .video-poster .play { transition: none; }
 }

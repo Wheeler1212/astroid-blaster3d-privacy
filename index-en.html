@@ -13,7 +13,7 @@
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="alternate" hreflang="de" href="https://astroid-blaster.de/">
-<link rel="stylesheet" href="home.css?v=3">
+<link rel="stylesheet" href="home.css?v=4">
 </head>
 <body>
 
@@ -21,6 +21,7 @@
   <div class="wrap">
     <a class="brand pixel" href="index-en.html"><img src="img/favicon.png" alt=""><span>ASTROID BLASTER 3D</span></a>
     <nav class="nav-links" aria-label="Main navigation">
+      <a href="#video">Video</a>
       <a href="#features">Features</a>
       <a href="#enemies">Enemies</a>
       <a href="#screenshots">Screenshots</a>
@@ -49,6 +50,23 @@
       <div class="device">
         <img src="img/shot-action.jpg" width="1600" height="1200" alt="Gameplay: the TwinShip fires a double burst, an asteroid explodes, and the cube Smiley grins at the top">
       </div>
+    </div>
+  </section>
+
+  <section id="video" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="pixel">See it in action</h2>
+        <p>Level 1 on iPad: blasting asteroids, the Probe drops its colorful stars – and the red star hunts the TwinShip down.</p>
+      </div>
+      <div class="video-frame" data-video="6i5ziAL3kDg" data-title="Astroid Blaster3D – Level 1 on iPad">
+        <a class="video-poster" href="https://www.youtube.com/watch?v=6i5ziAL3kDg" aria-label="Play video (loads YouTube)">
+          <img src="img/action-probe-star.jpg" width="1600" height="1170" loading="lazy" alt="Preview: the Probe releases its star">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+        </a>
+      </div>
+      <p class="video-note">The video is only loaded from YouTube after you click. Data is then sent to YouTube (Google) – see the <a href="privacy.html#youtube">privacy policy</a>.</p>
+      <p class="video-channel">More on YouTube: <a href="https://www.youtube.com/@AstroidBlaster3D">@AstroidBlaster3D</a></p>
     </div>
   </section>
 
@@ -269,6 +287,22 @@
 </dialog>
 
 <script>
+  // Video erst nach dem Klick laden (2-Klick-Lösung) - vorher keine Verbindung zu
+  // YouTube. Ohne JavaScript öffnet der Link das Video direkt auf YouTube.
+  (function () {
+    document.querySelectorAll(".video-frame").forEach(function (frame) {
+      var link = frame.querySelector(".video-poster");
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        var iframe = document.createElement("iframe");
+        iframe.src = "https://www.youtube-nocookie.com/embed/" + frame.dataset.video + "?autoplay=1&rel=0";
+        iframe.title = frame.dataset.title || "YouTube";
+        iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        iframe.allowFullscreen = true;
+        frame.replaceChild(iframe, link);
+      });
+    });
+  })();
   // Show gallery images enlarged in a dialog - without JavaScript the link simply opens the image
   (function () {
     var dlg = document.getElementById("lightbox");
